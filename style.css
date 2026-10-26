@@ -1,0 +1,113 @@
+:root {
+  --color-primary: #0d6efd;
+  --color-light: #f8f9fa;
+  --color-dark: #212529;
+  --color-border: #e7ecf2;
+  --shadow-soft: 0 12px 30px rgba(33, 37, 41, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+  background: linear-gradient(135deg, #ffffff 0%, #eaf3ff 100%);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hero-label {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04rem;
+}
+
+.section-heading {
+  max-width: 720px;
+}
+
+.product-card {
+  height: 100%;
+  border: 0;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(33, 37, 41, 0.14);
+}
+
+.product-image-wrapper {
+  height: 230px;
+  padding: 1.25rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-title {
+  min-height: 3rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.product-description {
+  min-height: 3rem;
+}
+
+.product-price {
+  color: var(--color-primary);
+  font-size: 1.25rem;
+}
+
+.category-badge {
+  width: fit-content;
+  background-color: #eaf3ff;
+  color: var(--color-primary);
+  border: 1px solid #cfe3ff;
+}
+
+.btn-product {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-product:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(13, 110, 253, 0.25);
+}
+
+.loading-box,
+.error-box {
+  min-height: 220px;
+  border-radius: 0.75rem;
+  background-color: #ffffff;
+  box-shadow: var(--shadow-soft);
+}
+
+.footer {
+  background-color: var(--color-dark);
+  color: #ffffff;
+}
+
+@media (min-width: 992px) {
+  .hero {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
